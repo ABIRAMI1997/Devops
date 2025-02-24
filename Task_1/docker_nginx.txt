@@ -1,0 +1,7 @@
+Task 1 :
+
+Learnings:
+Able to pull the docker image using command line and bind it with port in host and started the service.
+
+Docker basic commands: docker pull, run, start , stop, ps , ps -a, docker run -d -p 9000:80 nginx:1.23, images 
+
