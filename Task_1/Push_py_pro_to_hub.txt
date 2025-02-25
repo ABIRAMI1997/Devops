@@ -1,0 +1,6 @@
+Learning:
+
+Create a python application, and build the image.
+Push the image to docker hub with tag. 
+Run the image.
+
