@@ -1,0 +1,4 @@
+Learnings:
+
+Cloned a django application, copied all the required folders to container
+Installed all dependecies,requirements inside the virtual env and bind the port to container to start the application 
