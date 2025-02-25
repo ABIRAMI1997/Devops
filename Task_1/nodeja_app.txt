@@ -1,0 +1,6 @@
+Learnings:
+
+Here I have learnt to build own node js app image. 
+
+The Docker file structure includes the base image, includes the dependency from package.json file , 
+copy the files to container, change the working directory and run the dependencies and start the application.
