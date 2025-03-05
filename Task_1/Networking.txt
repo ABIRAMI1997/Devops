@@ -1,0 +1,3 @@
+Create a two conatiners within same network and verified the conenction using ping.
+Create another secure container in separate network and checked it is not able to be pinged from other two containers.
+learnt the bridge and host networking concepts
