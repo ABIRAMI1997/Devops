@@ -1,0 +1,45 @@
+Here I have learnt to create volume, mount the volume to the container , starting the mounter container on a port.
+Analysing the logs using inspect , for mountpoint and images etc.
+Delection of volume , after removing container.
+Deletion of volume, without renaming the container.
+
+Commands used:
+
+**Container Management**
+Command	Description
+docker ps	List running containers
+docker ps -a	List all containers (including stopped ones)
+docker run -d --name mycon -p 8080:80 nginx	Run a container in the background
+docker start mycon	Start a stopped container
+docker stop mycon	Stop a running container
+docker restart mycon	Restart a container
+docker rm mycon	Remove a stopped container
+docker rm -f mycon	Force remove a running container
+docker logs mycon	View logs of a container
+docker exec -it mycon sh	Open a shell inside a running container
+docker inspect mycon	Get detailed information about a container
+
+**Image Management**
+Command	Description
+docker images	List all downloaded images
+docker pull nginx	Download an image from Docker Hub
+docker build -t myimage .	Build an image from a Dockerfile
+docker tag myimage myrepo/myimage:v1	Tag an image for pushing
+docker push myrepo/myimage:v1	Push an image to a repository
+docker rmi myimage	Remove an image
+docker rmi $(docker images -q)	Remove all images
+
+**Volume Management**
+Command	Description
+docker volume ls	List all volumes
+docker volume create myvol	Create a volume
+docker run -v myvol:/app/data nginx	Run a container with a mounted volume
+docker volume inspect myvol	Inspect a volume
+docker volume rm myvol	Remove a volume
+docker volume prune	Remove all unused volumes
+
+**System Cleanup**
+Command	Description
+docker system df	Show disk usage by Docker
+docker system prune	Remove unused containers, networks, and images
+docker system prune -a	Remove all unused images, containers, and networks
