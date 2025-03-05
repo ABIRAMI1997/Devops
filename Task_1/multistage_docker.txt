@@ -1,0 +1,6 @@
+Multi-Stage Docker Builds 
+Multi-stage builds in Docker help create smaller, optimized images by using multiple stages in a single Dockerfile.
+This is especially useful for building applications where you need build tools in one stage but don’t want them in the final image.
+
+Here used scratch to reduce the image size. Firt stage in build using ubuntu and go compiles the application
+second stage in run , runs it in minimalistic container.
