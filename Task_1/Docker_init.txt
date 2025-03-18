@@ -1,0 +1,9 @@
+Learnt how to use docker init to create docker compose file.
+Used a python application in flask , and create docker files uisng docker init.
+
+Learnt to give select prompts in init command
+
+Command used:
+Docker init
+docker compose up --build
+
