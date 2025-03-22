@@ -1,0 +1,23 @@
+Learnt the importance of docker compose 
+How to start multiple containers having dependecy in single comand.
+How to write docker compose.yaml file.
+
+Used the awesome-compose docker repo and build the nginx-nodejs-redis application.
+run it on localhost 80 with redis for caching and simple web app.
+
+
+Simple example of compose.yaml file
+version: '3.8'
+
+services:
+  app:
+    image: my-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app-data:/app
+
+
+Commands used:
+docker-compose up -d
+docker-compose down
