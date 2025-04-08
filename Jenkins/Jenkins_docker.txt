@@ -1,0 +1,60 @@
+Learning:
+
+1. Installed docker and jenkins in the windows with same user.
+2. Give permission for jenkins to access docker.
+3. Configure pipeline script in jenkins to check the docker version
+4. Configure another pipeline to pull node 16 image, python image and show its version.
+5. Verified the same in docker hub desktop UI.
+
+
+code 1:
+
+pipeline {
+  agent any
+  stages {
+    stage('Docker Check') {
+      steps {
+        bat 'docker --version'
+      }
+    }
+  }
+}
+
+
+code 2:
+
+pipeline {
+  agent any
+  stages {
+    stage('Pull Docker Image') {
+      steps {
+        bat 'docker pull node:16-alpine'
+      }
+    }
+    stage('Run Node in Docker') {
+      steps {
+        bat 'docker run --rm node:16-alpine node --version'
+      }
+    }
+  }
+}
+
+
+code 3:
+
+pipeline {
+  agent any
+  stages {
+    stage('Pull Python Image') {
+      steps {
+        bat 'docker pull python:3.11-alpine'
+      }
+    }
+    stage('Show Python Version') {
+      steps {
+        bat 'docker run --rm python:3.11-alpine python --version'
+      }
+    }
+  }
+}
+
