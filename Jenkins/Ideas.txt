@@ -1,0 +1,7 @@
+Multi stage - multi agent
+Build → Test → Package → Deploy
+Static Code Analysis + Unit Test + Code Coverage + Report
+Infrastructure as Code (IaC) Pipelines
+Multi-environment Deployment
+Approval Gates / Manual Intervention
+
