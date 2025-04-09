@@ -5,3 +5,12 @@ Infrastructure as Code (IaC) Pipelines
 Multi-environment Deployment
 Approval Gates / Manual Intervention
 
+
+Parallel Execution: Execute independent stages concurrently to reduce build time. For example, running unit tests and static code analysis in parallel.​
+toolsqa.com
+
+Environment Variables: Define and use environment variables for configuration settings, making your pipeline more flexible and easier to maintain.​
+
+Parameterized Builds: Allow the pipeline to accept parameters, enabling dynamic behavior based on user input or external conditions.​
+
+Post Actions: Implement post actions to handle different build outcomes, such as sending notifications on success or failure.
