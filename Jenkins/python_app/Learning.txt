@@ -1,0 +1,11 @@
+Learning:
+
+Build image using docker - > test -> Deploy -> post actions
+
+1. Created a python app using flask.
+2. Created docker file to bild image and run using container
+3. Created jenkins files with build, test , deploy and post actions stages
+4. Gave the credential of git to jenkins to check out using scm.
+5. Ran the jenkins pipeline, verified the logs and pushed the image in docker hub using pipeline
+6. Verified in local using the url : http://localhost:5000/add?a=3&b=5 and also using  curl in command line
+
