@@ -8,6 +8,12 @@ pipeline {
       }
     }
 
+    stage('Check Python') {
+  steps {
+    bat 'where python'
+  }
+}
+
 stage('Run Unit Tests') {
   steps {
     bat '''
