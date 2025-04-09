@@ -8,16 +8,17 @@ pipeline {
       }
     }
 
-    stage('Run Unit Tests') {
-      steps {
-        bat '''
-          python -m venv venv
-          call venv\\Scripts\\activate
-          pip install -r requirements.txt
-          python -m unittest discover tests
-        '''
-      }
-    }
+stage('Run Unit Tests') {
+  steps {
+    bat '''
+      python -m venv venv
+      call venv\\Scripts\\activate.bat
+      pip install -r requirements.txt
+      python -m unittest discover tests
+    '''
+  }
+}
+
 
     stage('Deploy') {
       steps {
