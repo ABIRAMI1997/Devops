@@ -10,7 +10,7 @@ pipeline {
 
  stage('Run Unit Tests') {
   steps {
-    bat 'docker run --rm my-python-app python -m unittest discover tests'
+    bat 'docker run --rm my-python-app python -m unittest discover test'
   }
 }
 
