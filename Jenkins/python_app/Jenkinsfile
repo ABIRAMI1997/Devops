@@ -1,18 +1,7 @@
 pipeline {
   agent any
 
-  environment {
-    VENV_DIR = "venv"
-  }
-
   stages {
-    stage('Checkout') {
-      steps {
-        // Clone the actual GitHub repo (replace with your real one)
-        git 'https://github.com/ABIRAMI1997/Devops.git'
-      }
-    }
-
     stage('Build Docker Image') {
       steps {
         bat 'docker build -t my-python-app .'
@@ -21,12 +10,12 @@ pipeline {
 
     stage('Run Unit Tests') {
       steps {
-        bat """
-        python -m venv %VENV_DIR%
-        call %VENV_DIR%\\Scripts\\activate.bat
-        pip install -r requirements.txt
-        python -m unittest discover -s tests
-        """
+        bat '''
+          python -m venv venv
+          call venv\\Scripts\\activate
+          pip install -r requirements.txt
+          python -m unittest discover tests
+        '''
       }
     }
 
