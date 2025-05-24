@@ -1,0 +1,50 @@
+1. Install ansible 
+
+**Authenticate the target server using ssh**
+1. Generate public - private key pair in ansible installed server
+2. use the public key from ansible server and paste in targte server, before that generate key pairs in target server as well.
+
+
+**Write simple commands without writing script - Ansible adhoc commands**
+1. Do not write playbook, give simple command typing python3 and CLI give command.
+2. Ansible inventory file
+3. ansible -i inventory all -m "shell" -a "touch devops"
+
+**Ansible modules**
+1. How to use modules liek shell or python commands
+
+**Grouping based of servers**
+1. Group based [Webserver], [Dbserver] in inventory file, to make changes only in them.
+
+**Install and start nginx by writing playbook, Executing with verbose command for debugging**
+1. ansible-playbook -i hosts.ini nginx-install.yml
+---
+- name: Install and Start Nginx
+  hosts: webservers
+  become: yes  # Use sudo
+  tasks:
+
+    - name: Install Nginx (Debian/Ubuntu)
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+      when: ansible_os_family == "Debian"
+
+    - name: Install Nginx (RHEL/CentOS)
+      yum:
+        name: nginx
+        state: present
+      when: ansible_os_family == "RedHat"
+
+    - name: Ensure Nginx is started and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+**Write complex things initiallising Kubernetes using ansible galaxy using roles**
+1. Understanding of init command
+2. Understanding of meta, Handlers, vars, defaults,templates, task, files
+
+
