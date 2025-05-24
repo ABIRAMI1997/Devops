@@ -1,0 +1,17 @@
+Terraform init, plan, apply, run , destroy
+
+creation of main.tf file
+https://github.com/iam-veeramalla/write_your_first_terraform_project/blob/main/aws/local_state/main.tf
+
+terraform plan
+terraform apply
+
+Output.tf to retuen output 
+
+Usage of state file in remote cenrtral repo - s3, source of truth - one user at a time
+Dynamo DB - to lock the file
+
+Disadvantages of terraform
+
+
+
