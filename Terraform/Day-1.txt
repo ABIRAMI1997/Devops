@@ -1,1 +1,40 @@
+Why terraform? API as a code
+Infrastructure as Code (IaC)
 
+Define infrastructure using code for automation and version control.
+
+Declarative Syntax
+
+You describe the desired state, and Terraform figures out the steps.
+
+Cloud-Agnostic
+
+Supports AWS, Azure, GCP, Kubernetes, VMware, etc.
+
+Execution Planning
+
+terraform plan shows exactly what will change before applying it.
+
+State Management
+
+Tracks the real-world state of infrastructure for accurate updates.
+
+Idempotency
+
+Running the same code multiple times results in the same infrastructure.
+
+Modularity
+
+Use reusable modules for cleaner, DRY (Don't Repeat Yourself) code.
+
+Multi-Cloud Support
+
+Manage infrastructure across multiple cloud providers from one tool.
+
+Extensible Ecosystem
+
+Large collection of providers and community-maintained modules.
+
+Team Collaboration
+
+Remote backends and state locking allow safe, shared use in teams.
