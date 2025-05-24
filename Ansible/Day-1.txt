@@ -1,1 +1,18 @@
+Ansible - Day 01
+
+1. Push changes and not pull changes
+2. Agentless and not master/slave
+3. Login without passcode
+4. Dynamic inventory
+5. Simple yaml , Support windows and linux
+6. Write own modules using python
+7. Ansible galaxy for sharing
+8. Supports windows using protocol winRM and use ssh for linux
+9. In cloud platform if the ansible has public access, it can work.
+
+Disadvantage:
+Lots of debugging
+Performance issue
+Slightly with windows
+
 
