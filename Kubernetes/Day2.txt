@@ -1,0 +1,18 @@
+Control pane:
+
+API server
+etcd
+schedulre
+controller manager
+ccm
+Replicaset
+
+Data pane:
+
+Kubelet 
+kube-proxy
+container runtime
+
+
+How to install kubernets on EC2 using KOPS
+https://github.com/iam-veeramalla/Kubernetes-Zero-to-Hero
