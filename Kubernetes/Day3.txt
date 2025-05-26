@@ -1,0 +1,29 @@
+Deploy your first app:
+
+What is pod?
+K8S cluter using Kubectl
+
+Install kubectl in widnows
+Minikube in windows
+Use docker as a driver to install minikube
+
+kubectl get nodes
+create new pod with niginx image
+- kubectl create -f .\new_pod.yml
+
+Get details of pod:
+kubectl get pods -o wide
+
+ssh into pod:
+minikube ssh
+
+curl :
+curl 10.244.0.3
+
+Logs:
+kubectl logs pod nginx
+
+delete the pod:
+kubectl delete pod nginx
+
+
