@@ -1,0 +1,15 @@
+K8s deployment
+
+Deployment -> Replicaset -> Controller -> pod
+
+Auto healing and scaling
+
+Replicaset = Number of pods
+Controller = checks if desired state is equal to actual state
+kubectl get all
+kubectl get all -A
+kubectl get pods -w
+
+1. Create a pod using deploy file and cross check logs
+2. Increase the replicaset and check if it is creating
+3. Increase and decrease the number of pods
