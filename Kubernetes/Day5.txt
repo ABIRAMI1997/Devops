@@ -1,0 +1,31 @@
+Load balancing and networking
+
+SVC - service
+
+Service discovery
+labels and selectors
+
+Networking
+1. cluster IP -- inside the k8s - discovery and load balancing
+2. Nodeport - inside organisation - worker node ip address - node ip address - vpc nodes
+3. Load balancer - external world
+
+Traffic flow usin gkubeshark
+1. Create docker image
+2. create deployment file using the image, use selector and label
+3. Kubectl get deploy
+
+
+Cluster IP:
+Login using ssh and use crul to open the app
+
+Node Port:
+Inside spec in the nodeport
+Target poer where the port is running
+kubectl get svc
+minikube ip
+image name should be same as selector name (Service discovery)
+Load balancing and packet travel from src ip , to minikube ip to service ip in round robin fashion
+
+
+
