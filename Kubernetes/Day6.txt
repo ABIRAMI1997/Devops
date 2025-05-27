@@ -1,0 +1,22 @@
+K8S Ingress:
+
+Different types of load balancing:
+Sticky session
+Ratio based
+path based
+domain whitelist 
+blacklist
+
+1. Round robin in k8s
+2. Load balancer static ip and its cost
+
+what is ingress.
+Ingress controller to overcome problem in k8s
+
+Host based load balancing
+
+minikube addons enable ingress
+
+
+adding host domain name in 
+/etc/hosts file
