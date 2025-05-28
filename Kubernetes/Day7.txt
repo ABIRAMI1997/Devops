@@ -1,0 +1,13 @@
+KS RBAC:
+
+1. Service acct/users
+2. Roles/cluster roles
+3. Role binding/CRB
+
+K9s api server ->Oauth server
+IAM OAuth provider
+Role binding
+Service account - users
+Role - Permission
+
+Started with openshift
