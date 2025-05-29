@@ -1,0 +1,10 @@
+custom resource - CRD, CR, custom controller
+Extend api capability
+
+CRD - custom resouce definition - yaml file, introduce new api in k8s
+CNCF -  Popular Custom controller
+K8s sample controller
+istio - helm 
+
+
+
