@@ -1,0 +1,28 @@
+Volume mounts, secrets , configmap
+
+create configmap.yml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  APP_MODE: "production"
+  LOG_LEVEL: "debug"
+
+Use it in pod creation:
+env:
+    - name: APP_MODE
+      valueFrom:
+        configMapKeyRef:
+          name: app-config
+          key: APP_MODE
+    - name: LOG_LEVEL
+      valueFrom:
+        configMapKeyRef:
+          name: app-config
+          key: LOG_LEVEL
+
+Volumemounts
+Create a volume and attach it pod.
+Changes cant be made in pod while it is running
