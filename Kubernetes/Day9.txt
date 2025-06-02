@@ -25,4 +25,8 @@ env:
 
 Volumemounts
 Create a volume and attach it pod.
-Changes cant be made in pod while it is running
+Changes cant be made in pod while it is running , cannot restart
+Mount the conifgmap file in a path inside pod: for example /apt
+At the level of container create volume
+
+Create secret 
