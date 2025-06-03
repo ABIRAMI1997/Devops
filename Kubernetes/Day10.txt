@@ -1,0 +1,21 @@
+Monitoring K8S using prometheus and grafana
+
+helm or operators
+
+https://github.com/iam-veeramalla/observability-zero-to-hero/tree/main/day-2
+
+Install helm:
+C:\Users\Hp>"C:\Users\Hp\Desktop\helm.exe" version
+version.BuildInfo{Version:"v3.18.2", GitCommit:"04cad4610054e5d546aa5c5d9c1b1d5cf68ec1f8", GitTreeState:"clean", GoVersion:"go1.24.3"}
+
+Installed prometheus
+Exposed the clusterip to nodeport
+used portforwarding to open it in the local system
+install grafana
+expose the port in similar way 
+using pre built grafana id , see the metrics in real time in grafana
+Usage of prometheus state metrics 
+and see the files in json format , and see them in prometheus dashboard.
+
+
+
